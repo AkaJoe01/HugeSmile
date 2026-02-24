@@ -163,6 +163,11 @@ em { font-style: italic; }
   color: var(--clr-dark);
 }
 
+.nav_logo img{
+  width: 50px;
+  height: 50px;
+}
+
 .nav__cta {
   font-family: var(--font-body);
   font-size: 0.72rem;
