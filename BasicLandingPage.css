@@ -150,22 +150,25 @@ em { font-style: italic; }
   align-items: center;
   justify-content: space-between;
   padding: 1.2rem 3rem;
-  background: rgba(245, 240, 232, 0.95);
+  background: #FAF7F2;
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--clr-rule);
 }
 
-.nav__logo {
-  font-family: var(--font-display);
-  font-size: 1.2rem;
+/* rgba(245, 240, 232, 0.95) FAF7F2 */
+
+.nav_logo {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
   font-weight: 600;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.05em; 
   color: var(--clr-dark);
 }
 
 .nav_logo img{
   width: 50px;
   height: 50px;
+  border-radius: 50%;
 }
 
 .nav__cta {
@@ -183,6 +186,14 @@ em { font-style: italic; }
   color: var(--clr-dark);
   border-color: var(--clr-dark);
 }
+
+.brandname span{
+    display: none;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    font-family: var(--font-body);
+  }
 
 /* ===========================
    HERO
@@ -773,9 +784,7 @@ em { font-style: italic; }
   font-family: var(--font-display);
 }
 
-/* ===========================
-   RESPONSIVE
-   =========================== */
+
 @media (max-width: 1024px) {
   .framework__grid {
     grid-template-columns: repeat(2, 1fr);
@@ -861,6 +870,10 @@ em { font-style: italic; }
     padding: 2rem;
     width: 100%;
   }
+
+  .brandname span{
+    display: block;
+  }
 }
 
 @media (max-width: 480px) {
@@ -876,4 +889,18 @@ em { font-style: italic; }
     font-size: 0.8rem;
     padding: 1rem 2rem;
   }
+
+  .brandname {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 0.05em; 
+  color: var(--clr-dark);
+}
+
+  /* .nav_logo .brandname{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #C8A96E;
+  } */
 }
